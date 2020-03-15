@@ -8,6 +8,7 @@
 **Installation**
 -
 - `pip install -r requirement.txt`
+- `python nltk_download.py`
 
 **Run the project**
 -

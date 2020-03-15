@@ -2,8 +2,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from main.form import KAForm
 from joblib import load
-import nltk
-from nltk.tokenize import sent_tokenize, word_tokenize
+import nltk_download
+from nltk_download.tokenize import sent_tokenize, word_tokenize
 
 
 def word2features(sent, i):
@@ -73,7 +73,7 @@ def index(request):
 
             data = list()
             for s in sentences:
-                data.append(nltk.pos_tag(word_tokenize(s)))
+                data.append(nltk_download.pos_tag(word_tokenize(s)))
             X = [sent2features(s) for s in data]
 
             response = crf.predict(X)
