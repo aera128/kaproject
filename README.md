@@ -20,8 +20,3 @@
 - choose the amount of sentences in the code (`df = df[:<amount>]`)
 - `python train.py`
 - wait
-
-**Members**
--
-- Matthieu MERCIER - 21600848
-- Alexandre LELOUTRE - 21403623
